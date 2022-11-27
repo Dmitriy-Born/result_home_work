@@ -36,3 +36,9 @@ string[] Work(string[] startMass, string[] endMass)
     }
     return endMass;
 }
+
+//Метод вывода элементов
+void PrintResult(string[] endMass)
+{
+    Console.WriteLine($"[{String.Join(", ", endMass)}]");
+}
