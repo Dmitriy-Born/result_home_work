@@ -7,6 +7,7 @@ int count = 0;
 
 int S = Quantity(text, count);
 string[] Mass = new string[S];
+Work(text, Mass);
 
 //Метод подсчета количесвта элементов в массиве меньше или раные 3
 int Quantity(string[] massive, int num)
@@ -19,4 +20,19 @@ int Quantity(string[] massive, int num)
         }
     }
     return num;
+}
+
+//Метод присваивания нужных элементов изначального массива новому
+string[] Work(string[] startMass, string[] endMass)
+{
+    int j = 0;
+    for(int i = 0; i < text.Length; i++)
+    {
+        if(startMass[i].Length <= 3)
+        {
+            endMass[j] = startMass[i];
+            j++;
+        }
+    }
+    return endMass;
 }
